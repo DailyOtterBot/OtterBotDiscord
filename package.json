@@ -1,0 +1,25 @@
+{
+  "name": "otterbot_discord",
+  "version": "1.0.0",
+  "description": "A Discord bot that posts a picture of an otter each day",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DailyOtterBot/OtterBotDiscord.git"
+  },
+  "author": "KwiiHours",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DailyOtterBot/OtterBotDiscord/issues"
+  },
+  "homepage": "https://github.com/DailyOtterBot/OtterBotDiscord#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.36.1",
+    "discord.js": "^13.8.1"
+  }
+}
