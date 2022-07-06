@@ -28,18 +28,6 @@ module.exports = {
 				// 	.setCustomId('overview')
 				// 	.setLabel('Overview')
 				// 	.setStyle('PRIMARY'),
-                // new MessageButton()
-                //     .setCustomId('otter')
-                //     .setLabel('Otter')
-                //     .setStyle('SECONDARY'),
-                // new MessageButton()
-                //     .setCustomId('add')
-                //     .setLabel('Add/Remove')
-                //     .setStyle('SECONDARY'),
-                // new MessageButton()
-                //     .setCustomId('list')
-                //     .setLabel('List')
-                //     .setStyle('SECONDARY'),
                 new MessageButton()
                     .setLabel('Support')
                     .setStyle('LINK')
