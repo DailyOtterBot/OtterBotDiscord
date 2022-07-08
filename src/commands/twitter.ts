@@ -1,11 +1,15 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
-const { MessageActionRow, MessageButton } = require('discord.js');
+import { SlashCommandBuilder } from '@discordjs/builders';
+import { MessageActionRow, MessageButton } from 'discord.js';
+import Command from '../types/Command';
+import { CommandInteraction } from 'discord.js';
 
-module.exports = {
-	data: new SlashCommandBuilder()
+
+const twitter: Command = {
+    data: new SlashCommandBuilder()
 		.setName('twitter')
 		.setDescription('Links to the @OttersEveryDay Twitter account'),
-	async execute(interaction) {
+
+    execute: async function (interaction: CommandInteraction<'cached' | 'raw'>): Promise<void> {
         const row = new MessageActionRow()
         .addComponents(
             new MessageButton()
@@ -15,5 +19,8 @@ module.exports = {
         );
         
     const messageId = await interaction.reply({ components: [row], ephemeral: true });
-	},
-};
+    }
+
+}
+
+export default twitter;

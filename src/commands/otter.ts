@@ -1,31 +1,33 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
-const { MessageEmbed } = require('discord.js');
-const today = new Date();
-const days = Math.floor((today - new Date("1/20/2022")) / (1000 * 3600 * 24));
-const randomDay = Math.floor(Math.random() * days + 1);
-console.log(days + " days since start.")
+import { SlashCommandBuilder } from '@discordjs/builders';
+import Command from '../types/Command';
+import { CommandInteraction, MessageEmbed } from 'discord.js';
 
-module.exports = {
-	data: new SlashCommandBuilder()
-		.setName('otter')
-		.addStringOption(option =>
-			option.setName('category')
-				.setDescription("Random Otter or Today's Otter")
-				.setRequired(true)
-				.addChoices(
-					{ name: "today", value: "today" },
-					{ name: "number", value: "number" },
-					{ name: "random", value: "random" },
-			))
-		.addNumberOption(option =>
-			option.setName('number')
-				.setDescription("Which day do you want?")
-				.setRequired(false)
-				.setMinValue(0)
-				.setMaxValue(days)
-		)		
-		.setDescription('Sends an otter image 🦦'),
-	async execute(interaction) {
+const otter: Command = {
+    data: new SlashCommandBuilder()
+	.setName('otter')
+	.addStringOption(option =>
+		option.setName('category')
+			.setDescription("Random Otter or Today's Otter")
+			.setRequired(true)
+			.addChoices(
+				{ name: "today", value: "today" },
+				{ name: "number", value: "number" },
+				{ name: "random", value: "random" },
+		))
+	.addNumberOption(option =>
+		option.setName('number')
+			.setDescription("Which day do you want?")
+			.setRequired(false)
+			.setMinValue(0)
+	)		
+	.setDescription('Sends an otter image 🦦'),
+    execute: async function (interaction: CommandInteraction<'cached' | 'raw'>): Promise<void> {
+		const today = new Date();
+
+		const days = Math.floor((Date.now() - new Date("1/20/2022").getTime()) / (1000 * 3600 * 24));
+		const randomDay = Math.floor(Math.random() * days + 1);
+
+		console.log(days + " days since start.");
 		await interaction.deferReply();
 		const day = interaction.options.getString("category");
 		const number = interaction.options.getNumber("number");
@@ -52,5 +54,7 @@ module.exports = {
 			const messageId = await interaction.editReply({ embeds: [embed] });
 		}
 
-	},
-};
+    }
+}
+
+export default otter;
