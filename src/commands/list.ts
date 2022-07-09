@@ -23,16 +23,29 @@ const list: Command = {
 			.setColor("#bfe2fe")
             .setThumbnail("https://pbs.twimg.com/profile_images/1483969427175784449/ngqr3WgK_400x400.jpg")
         
-        for (let i = 0; i < thisServer.length; i++) {
-            embedNew.addFields({
-                name: "Channel #" + i+1,
-                value: "<#" + thisServer[i] + ">",
-            });
+        if (thisServer.length < 25) {
+            for (let i = 0; i < thisServer.length; i++) {
+                embedNew.addFields({
+                    name: "Channel #" + (i+1),
+                    value: "<#" + thisServer[i] + ">",
+                });
+            }
+            const messageId = await interaction.reply({ embeds: [embedNew]});
         }
-        const messageId = await interaction.reply({ embeds: [embedNew]});
+        else {
+            for (let i = 0; i < 23; i++) {
+                embedNew.addFields({
+                    name: "Channel #" + (i+1),
+                    value: "<#" + thisServer[i] + ">",
+                });
+            }
+            embedNew.addFields({
+                name: "Too many channels to list past this point due to Discord API limitations",
+                value: "...",
+            })
+            const messageId = await interaction.reply({ embeds: [embedNew]});
+        }
     }
-
-
   }
 }
 
