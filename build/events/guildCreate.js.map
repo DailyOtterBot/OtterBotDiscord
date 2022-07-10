@@ -1,1 +1,0 @@
-{"version":3,"file":"guildCreate.js","sourceRoot":"","sources":["../../src/events/guildCreate.ts"],"names":[],"mappings":";;AAGA,MAAM,WAAW,GAAU;IACvB,IAAI,EAAE,aAAa;IACnB,OAAO,EAAE;QACL,OAAO,CAAC,GAAG,CAAC,qBAAqB,CAAC,CAAC;IAEvC,CAAC;CACJ,CAAA;AAED,kBAAe,WAAW,CAAC"}
