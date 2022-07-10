@@ -2,8 +2,15 @@
   "name": "otterbot_discord",
   "version": "1.0.0",
   "description": "A Discord bot that posts a picture of an otter each day",
+  "engines": { "node": "16.15.1" },
   "main": "build/index.js",
   "scripts": {
+    "start": "node build/index.js",
+    "postinstall": "tsc",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master",
+
     "build": "tsc",
     "dev": "nodemon src/index.ts",
     "typecheck": "tsc --noEmit",
