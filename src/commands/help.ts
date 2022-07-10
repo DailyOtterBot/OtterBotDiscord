@@ -19,6 +19,8 @@ const help: Command = {
                 { name: "/list", value: "Lists the channels in this server recieving daily otters. \n eg: `/list`" },
                 { name: "/twitter", value: "Links to the @OttersEveryDay Twitter \n eg: `/twitter`" },
                 { name: "/ping", value: "Shows bot ping. \n eg: `/ping`" },
+                { name: "", value: "" },
+                { name: '"Where are my daily otters!?"', value: "Make sure OtterBot has permissions to View, and Send Embeds to the given channel." },
             )
 
 
