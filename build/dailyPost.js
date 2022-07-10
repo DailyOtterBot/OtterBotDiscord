@@ -20,7 +20,7 @@ async function Run() {
         const embed = new discord_js_1.MessageEmbed();
         embed.setTitle("Today's Otter - Otter " + days)
             .setColor("#bfe2fe")
-            .setFooter("`/remove #thisChannel` to stop recieving otters.")
+            .setFooter('"/remove #thisChannel" to stop recieving otters.')
             .setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + days + ").jpg");
         const allGuilds = index_js_1.client.guilds.cache.map(guild => guild.id);
         // configRef.orderByChild("guildId").on("child_added", (snapshot) => {
