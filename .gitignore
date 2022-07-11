@@ -1,4 +1,4 @@
 node_modules/
 build/
-# config.json
-# otterbot-70ee1-firebase-adminsdk-x9182-00a93434d6.json
+config.json
+otterbot-70ee1-firebase-adminsdk-x9182-00a93434d6.json

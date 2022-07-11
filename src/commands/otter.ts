@@ -5,21 +5,17 @@ import { CommandInteraction, MessageEmbed } from 'discord.js';
 const otter: Command = {
     data: new SlashCommandBuilder()
 	.setName('otter')
-	.addStringOption(option =>
-		option.setName('category')
-			.setDescription("Random Otter or Today's Otter")
-			.setRequired(true)
-			.addChoices(
-				{ name: "today", value: "today" },
-				{ name: "number", value: "number" },
-				{ name: "random", value: "random" },
-		))
 	.addNumberOption(option =>
 		option.setName('number')
-			.setDescription("Which day do you want?")
+			.setDescription("The number of the Otter you would like (OPTIONAL)")
 			.setRequired(false)
 			.setMinValue(0)
-	)		
+			// .addChoices(
+			// 	{ name: "today", value: "today" },
+			// 	{ name: "number", value: "number" },
+			// 	{ name: "random", value: "random" },
+			// )
+		)	
 	.setDescription('Sends an otter image 🦦'),
     execute: async function (interaction: CommandInteraction<'cached' | 'raw'>): Promise<void> {
 		const today = new Date();
@@ -29,28 +25,19 @@ const otter: Command = {
 
 		console.log(days + " days since start.");
 		await interaction.deferReply();
-		const day = interaction.options.getString("category");
 		const number = interaction.options.getNumber("number");
 		
-
-		if (day == "number") {
+		if (number === null) {
 			const embed = new MessageEmbed();
-			embed.setTitle("Otter " + number)
+			embed.setAuthor({ name: "Random Otter - Otter " + randomDay, iconURL: "https://pbs.twimg.com/profile_images/1483969427175784449/ngqr3WgK_400x400.jpg"})
 				.setColor("#bfe2fe")
-				.setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + number + ").jpg");
-			const messageId = await interaction.editReply({ embeds: [embed] });
-		}
-		else if (day === "today") {
-			const embed = new MessageEmbed();
-			embed.setTitle("Today's Otter - Otter " + days)
-				.setColor("#bfe2fe")
-				.setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + days + ").jpg");
+				.setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + randomDay + ").jpg");
 			const messageId = await interaction.editReply({ embeds: [embed] });
 		} else {
 			const embed = new MessageEmbed();
-			embed.setTitle("Random Otter - Otter " + randomDay)
+			embed.setAuthor({ name: "Otter " + number, iconURL: "https://pbs.twimg.com/profile_images/1483969427175784449/ngqr3WgK_400x400.jpg"})
 				.setColor("#bfe2fe")
-				.setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + randomDay + ").jpg");
+				.setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + number + ").jpg");
 			const messageId = await interaction.editReply({ embeds: [embed] });
 		}
 

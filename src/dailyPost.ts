@@ -19,7 +19,7 @@ async function Run() {
     console.log(days + " days since start.");
 
     const embed = new MessageEmbed();
-                embed.setTitle("Today's Otter - Otter " + days)
+                embed.setAuthor({ name: "Today's Otter - Otter " + days, iconURL: "https://pbs.twimg.com/profile_images/1483969427175784449/ngqr3WgK_400x400.jpg"})
                     .setColor("#bfe2fe")
                     .setFooter('"/remove #thisChannel" to stop recieving otters.')
                     .setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + days + ").jpg");
