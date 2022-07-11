@@ -3,7 +3,7 @@
 ###
 
 <h1 align="center"> <br/> OtterBot for Discord<br/><br/></h3>
-<p align="center"><br /><strong>All the adorable otter pictures you could ever want, or need.</strong></p>
+<p align="center"><br /><strong>All the adorable otter pictures you could ever want or need - straight to your Discord.</strong></p>
 
 
 
@@ -18,25 +18,27 @@
 1. [Add OtterBot]() to your server
 2. Use the  ```/add #channel``` command to add channels which you want to recieve daily otters
    2. Use ```/list``` to check which channels you've added, and ```/remove #channel``` to remove undesired channels
-3. Ensure OtterBot has the correct channel permissions. It needs to be able to Read, Send Messages, and 
+3. Ensure OtterBot has the correct [channel permissions](https://support.discord.com/hc/en-us/articles/206029707-Setting-Up-Permissions-FAQ#h_01FFTW0BY5PDYV8YKSAWHJKR3T). It needs to be able to ```View Channel```, ```Send Messages```, and ```Embed Links```.
+4. That's it! Wait for your Daily Otters to arrive :D
 
 
 <br/><br/>
 ## Bugs or Suggestions: 
-Coming soon
+If you have found a bug, or have a suggestion, please reach out using the [Issues Tab](https://github.com/DailyOtterBot/OtterBotDiscord/issues).
 
 
 <br/><br/>
 ## Command List:
 | **Command** | **Values**                          | **Example**                       | **Description**                                       |
 |:-----------:|:-----------------------------------:|:---------------------------------:|:-----------------------------------------------------:|
-| /otter      | "today", "random", "number", [number] | /otter number 23, /otter random   | Returns a picture of an otter                         |
+| /otter      | number (OPTIONAL)                   | /otter number 23, /otter          | Returns a picture of an otter                         |
 | /add        | #channel                            | /add #otterHub                    | Adds a channel to recieve daily otters                |
 | /remove     | #channel                            | /remove #otterHub                 | Removes a channel's daily otters D:                   |
 | /list       |                                     | /list                             | Lists all channels in a server getting daily otters   |
 | /twitter    |                                     | /twitter                          | Links the [@OttersEveryDay] Twitter account           |
 | /ping       |                                     | /ping                             | Shares the bot's latency/ping                         |
 | /help       |                                     | /help                             | Shares a help menu listing commands in Discord        |
+| /stats      |                                     | /stats                            | Shares some of OtterBot's statistics                  |
 
 
 
