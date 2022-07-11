@@ -31,14 +31,14 @@ If you have found a bug, or have a suggestion, please reach out using the [Issue
 ## Command List:
 | **Command** | **Values**                          | **Example**                       | **Description**                                       | **Permissions**|
 |:-----------:|:-----------------------------------:|:---------------------------------:|:-----------------------------------------------------:|:--------------:|
-| /otter      | number (OPTIONAL)                   | /otter number 23, /otter          | Returns a picture of an otter                         | Everyone       |
-| /add        | #channel                            | /add #otterHub                    | Adds a channel to recieve daily otters                | Admin Only     |
-| /remove     | #channel                            | /remove #otterHub                 | Removes a channel's daily otters D:                   | Admin Only     |
-| /list       |                                     | /list                             | Lists all channels in a server getting daily otters   | Everyone       |
-| /twitter    |                                     | /twitter                          | Links the [@OttersEveryDay] Twitter account           | Everyone       |
-| /ping       |                                     | /ping                             | Shares the bot's latency/ping                         | Everyone       |
-| /help       |                                     | /help                             | Shares a help menu listing commands in Discord        | Everyone       |
-| /stats      |                                     | /stats                            | Shares some of OtterBot's statistics                  | Everyone       |
+| /otter      | number (OPTIONAL)                   | ```/otter 23```, ```/otter```     | Returns a picture of an otter                         | Everyone       |
+| /add        | #channel                            | ```/add #otterHub```              | Adds a channel to recieve daily otters                | Admin Only     |
+| /remove     | #channel                            | ```/remove #otterHub```           | Removes a channel's daily otters D:                   | Admin Only     |
+| /list       |                                     | ```/list```                       | Lists all channels in a server getting daily otters   | Everyone       |
+| /twitter    |                                     | ```/twitter```                    | Links the [@OttersEveryDay] Twitter account           | Everyone       |
+| /ping       |                                     | ```/ping```                       | Shares the bot's latency/ping                         | Everyone       |
+| /help       |                                     | ```/help```                       | Shares a help menu listing commands in Discord        | Everyone       |
+| /stats      |                                     | ```/stats```                      | Shares some of OtterBot's statistics                  | Everyone       |
 
 
 
