@@ -1,5 +1,4 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
-import { CommandInteraction } from 'discord.js';
 import { getSystemErrorMap } from 'util';
 import getServerConfig from '../functions/getServerConfig';
 import Command from '../types/Command';
@@ -10,11 +9,12 @@ const configRef = ref.child("config");
 const add: Command = {
   data: new SlashCommandBuilder()
   .setName('add')
-      .addChannelOption(option =>
+  .addChannelOption(option =>
           option.setName('channel')
           .setRequired(true)
           .setDescription('The channel to add the reaction to')
-      )    
+  )    
+  .setDefaultMemberPermissions(0)
   .setDescription('Add channels to recieve daily otter pictures'),    
   execute: async function (interaction) {
 

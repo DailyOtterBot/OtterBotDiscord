@@ -1,5 +1,4 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
-import { CommandInteraction } from 'discord.js';
 import { getSystemErrorMap } from 'util';
 import getServerConfig from '../functions/getServerConfig';
 import Command from '../types/Command';
@@ -15,6 +14,7 @@ const remove: Command = {
         .setRequired(true)
         .setDescription('The channel to remove otters from')
     )    
+    .setDefaultMemberPermissions(0)
     .setDescription('Removes a channel from recieving daily otters'),
     execute: async function (interaction) {
         const channelSnowflake = interaction.options.getChannel("channel", true);
