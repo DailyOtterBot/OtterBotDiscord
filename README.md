@@ -11,11 +11,11 @@
 • Subscribe to get daily otter pictures in specified channels<br/>
 • New otter pictures added every day of the week, every week of the year.<br/><br/>
 </p>
-<p align="center"><a rel="noreferrer noopener" href="https://discord.com/oauth2/authorize?scope=applications.commands%20bot&permissions=268561488&client_id=994046329678463026"><img alt="Add To Discord" width="200px" src="https://i.imgur.com/dcrHxxq.png"></a><br /><br />
+<p align="center"><a rel="noreferrer noopener" href="https://discord.com/api/oauth2/authorize?client_id=994046329678463026&permissions=414464658496&scope=bot%20applications.commands"><img alt="Add To Discord" width="200px" src="https://i.imgur.com/dcrHxxq.png"></a><br /><br />
 
 
 ## How To:  Setup
-1. [Add OtterBot]() to your server
+1. [Add OtterBot](https://discord.com/api/oauth2/authorize?client_id=994046329678463026&permissions=414464658496&scope=bot%20applications.commands) to your server
 2. Use the  ```/add #channel``` command to add channels which you want to recieve daily otters
    2. Use ```/list``` to check which channels you've added, and ```/remove #channel``` to remove undesired channels
 3. Ensure OtterBot has the correct [channel permissions](https://support.discord.com/hc/en-us/articles/206029707-Setting-Up-Permissions-FAQ#h_01FFTW0BY5PDYV8YKSAWHJKR3T). It needs to be able to ```View Channel```, ```Send Messages```, and ```Embed Links```.
