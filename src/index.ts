@@ -9,7 +9,7 @@ import { join } from 'path';
 import { REST } from '@discordjs/rest';
 import { Routes, ActivityType } from 'discord-api-types/v9';
 
-const express = require('express');
+// const express = require('express');
 const { token } = require('../config.json');
 
 export const client= new Client({ intents: [Intents.FLAGS.GUILDS] }) as OtterClient
@@ -107,14 +107,14 @@ const init = async () => {
     client.login(token);
 
     // Run the server for authentication
-    const app = express();
-    app.use(express.static(__dirname + "/oauth"));
+    // const app = express();
+    // app.use(express.static(__dirname + "/oauth"));
 
     // process.env.PORT lets the port be set by Heroku
     const port = process.env.PORT || 8080;
-    app.listen(port, function() {
-        console.log('Our app is running on http://localhost:' + port);
-    });
+    // app.listen(port, function() {
+    //     console.log('Our app is running on http://localhost:' + port);
+    // });
     
 }
 
