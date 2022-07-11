@@ -15,7 +15,10 @@
 
 
 ## How To:  Setup
-Coming soon
+1. [Add OtterBot]() to your server
+2. Use the  ```/add #channel``` command to add channels which you want to recieve daily otters
+   2. Use ```/list``` to check which channels you've added, and ```/remove #channel``` to remove undesired channels
+3. Ensure OtterBot has the correct channel permissions. It needs to be able to Read, Send Messages, and 
 
 
 <br/><br/>
