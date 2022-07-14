@@ -21,21 +21,15 @@ async function Run() {
     const embed = new MessageEmbed();
                 embed.setAuthor({ name: "Today's Otter - Otter " + days, iconURL: "https://pbs.twimg.com/profile_images/1483969427175784449/ngqr3WgK_400x400.jpg"})
                     .setColor("#bfe2fe")
-                    .setFooter('"/remove #thisChannel" to stop recieving otters.')
+                    .setFooter({ 
+                        text: '"/remove #thisChannel" to stop recieving otters.',
+                    })
                     .setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + days + ").jpg");
 
 
     const allGuilds = client.guilds.cache.map(guild => guild.id);
 
-// configRef.orderByChild("guildId").on("child_added", (snapshot) => {
-//     console.log(snapshot.val());
-// });
 
-// configRef.orderByChild("guildId").on("child_added", (snapshot) => {
-//     snapshot.forEach((data) => {
-//         console.log(data.val());
-//     });
-// });
 
 configRef.orderByValue().on('value', (snapshot) => {
     snapshot.forEach((data) => {
@@ -59,19 +53,6 @@ configRef.orderByValue().on('value', (snapshot) => {
     });
 });
 
-
-    // for (let i = 0; i < allGuilds.length; i++) {
-    //     const guildId = allGuilds[i];
-    //     const thisServer = await getServerConfig(guildId);
-    //     console.log(guildID);
-    //     // if (thisServer !== null) {
-    //     //     // for (let j = 0; j < thisServer.length; j++) {
-    //     //     //     // client.guilds.fetch(guildId).channels.get("812446252284772365").send(message.content)
-                
-    //     //     // }
-    //     //     console.log(guildID);
-    //     // }
-    // }
 }, 10000);
 };
 
