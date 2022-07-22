@@ -9,12 +9,7 @@ const otter: Command = {
 		option.setName('number')
 			.setDescription("The number of the Otter you would like (OPTIONAL)")
 			.setRequired(false)
-			.setMinValue(0)
-			// .addChoices(
-			// 	{ name: "today", value: "today" },
-			// 	{ name: "number", value: "number" },
-			// 	{ name: "random", value: "random" },
-			// )
+			.setMinValue(1)
 		)	
 	.setDescription('Sends an otter image 🦦'),
     execute: async function (interaction: CommandInteraction<'cached' | 'raw'>): Promise<void> {
@@ -33,12 +28,18 @@ const otter: Command = {
 				.setColor("#bfe2fe")
 				.setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + randomDay + ").jpg");
 			const messageId = await interaction.editReply({ embeds: [embed] });
-		} else {
+		} else if (number <= days) {
 			const embed = new MessageEmbed();
 			embed.setAuthor({ name: "Otter " + number, iconURL: "https://pbs.twimg.com/profile_images/1483969427175784449/ngqr3WgK_400x400.jpg"})
 				.setColor("#bfe2fe")
 				.setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + number + ").jpg");
 			const messageId = await interaction.editReply({ embeds: [embed] });
+		} else {
+			const embed = new MessageEmbed();
+			embed.setAuthor({ name: "Latest possible Otter, Otter " + days, iconURL: "https://pbs.twimg.com/profile_images/1483969427175784449/ngqr3WgK_400x400.jpg"})
+				.setColor("#bfe2fe")
+				.setImage("https://raw.githubusercontent.com/KwiiHours/OtterBot/main/images/otter%20(" + days + ").jpg");
+			const messageId = await interaction.editReply({ embeds: [embed], content: "Otter " + number + " is not yet available. Today's otter is Otter " + days + "!" });
 		}
 
     }
