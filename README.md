@@ -1,4 +1,4 @@
-<p align="center"><a href="https://kwii.tk" target="_blank" rel="noreferrer noopener"><img width="100%" alt="OtterBot Logo" src="https://i.imgur.com/ZwK8yWn.png"></a><br /></p>
+<p align="center"><a href="https://kwii.tk" target="_blank" rel="noreferrer noopener"><img width="100%" alt="OtterBot Logo" src="https://i.imgur.com/7uQL1Ip.png"></a><br /></p>
 
 ###
 
