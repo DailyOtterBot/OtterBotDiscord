@@ -18,7 +18,7 @@
 1. [Add OtterBot](https://discord.com/api/oauth2/authorize?client_id=994046329678463026&permissions=414464658496&scope=bot%20applications.commands) to your server
 2. Use the  ```/add #channel``` command to add channels which you want to recieve daily otters
    2. Use ```/list``` to check which channels you've added, and ```/remove #channel``` to remove undesired channels
-4. That's it! Wait for your Daily Otters to arrive :D
+4. That's it! Wait for your Daily Otters to arrive or use ```/otter``` to get some early!! :D
 
 
 <br/><br/>
