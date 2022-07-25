@@ -18,7 +18,6 @@
 1. [Add OtterBot](https://discord.com/api/oauth2/authorize?client_id=994046329678463026&permissions=414464658496&scope=bot%20applications.commands) to your server
 2. Use the  ```/add #channel``` command to add channels which you want to recieve daily otters
    2. Use ```/list``` to check which channels you've added, and ```/remove #channel``` to remove undesired channels
-3. Ensure OtterBot has the correct [channel permissions](https://support.discord.com/hc/en-us/articles/206029707-Setting-Up-Permissions-FAQ#h_01FFTW0BY5PDYV8YKSAWHJKR3T). It needs to be able to ```View Channel```, ```Send Messages```, and ```Embed Links```.
 4. That's it! Wait for your Daily Otters to arrive :D
 
 
@@ -26,6 +25,13 @@
 ## Bugs or Suggestions: 
 If you have found a bug, or have a suggestion, please reach out using the [Issues Tab](https://github.com/DailyOtterBot/OtterBotDiscord/issues).
 
+
+<br/><br/>
+## Troubleshooting:
+- Ensure OtterBot has the correct [channel permissions](https://support.discord.com/hc/en-us/articles/206029707-Setting-Up-Permissions-FAQ#h_01FFTW0BY5PDYV8YKSAWHJKR3T). It needs to be able to ```View Channel```, ```Send Messages```, and ```Embed Links```.
+- Ensure users have access to use slash commands in their [role permissions](https://support.discord.com/hc/en-us/articles/206029707-Setting-Up-Permissions-FAQ#h_01FFTVYZ40ZBHKZWTN1N8WPDTG).
+- Ensure there aren't issues with Discord or our servers by running ```/ping```. The lower the number the better. If the number is in the thousands, there are likely server errors that will be fixed shortly.
+- If you're still having issues, please reach out using the [Issues Tab](https://github.com/DailyOtterBot/OtterBotDiscord/issues).
 
 <br/><br/>
 ## Command List:
