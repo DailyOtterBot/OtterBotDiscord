@@ -15,7 +15,7 @@
 
 
 ## How To:  Setup
-1. [Add OtterBot](https://discord.com/api/oauth2/authorize?client_id=994046329678463026&permissions=414464658496&scope=bot%20applications.commands) to your server
+1. [Add OtterBot](https://kwii.tk/otterbotinvite) to your server
 2. Use the  ```/add #channel``` command to add channels which you want to recieve daily otters
    2. Use ```/list``` to check which channels you've added, and ```/remove #channel``` to remove undesired channels
 4. That's it! Wait for your Daily Otters to arrive or use ```/otter``` to get some early!! :D
@@ -41,7 +41,7 @@ If you have found a bug, or have a suggestion, please reach out using the [Issue
 | /add        | #channel                            | ```/add #otterHub```                   | Adds a channel to recieve daily otters                | Admin Only     |
 | /remove     | #channel                            | ```/remove #otterHub```                | Removes a channel's daily otters D:                   | Admin Only     |
 | /list       |                                     | ```/list```                            | Lists all channels in a server getting daily otters   | Everyone       |
-| /twitter    |                                     | ```/twitter```                         | Links the [@OttersEveryDay] Twitter account           | Everyone       |
+| /twitter    |                                     | ```/twitter```                         | Links the [@OttersEveryDay](https://twitter.com/OttersEveryDay) Twitter account           | Everyone       |
 | /ping       |                                     | ```/ping```                            | Shares the bot's latency/ping                         | Everyone       |
 | /help       |                                     | ```/help```                            | Shares a help menu listing commands in Discord        | Everyone       |
 | /stats      |                                     | ```/stats```                           | Shares some of OtterBot's statistics                  | Everyone       |
