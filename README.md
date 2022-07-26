@@ -11,7 +11,7 @@
 • Subscribe to get daily otter pictures in specified channels<br/>
 • New otter pictures added every day of the week, every week of the year.<br/><br/>
 </p>
-<p align="center"><a rel="noreferrer noopener" href="https://discord.com/api/oauth2/authorize?client_id=994046329678463026&permissions=414464658496&scope=bot%20applications.commands"><img alt="Add To Discord" width="200px" src="https://i.imgur.com/dcrHxxq.png"></a><br /><br />
+<p align="center"><a rel="noreferrer noopener" href="https://kwii.tk/otterbotinvite"><img alt="Add To Discord" width="200px" src="https://i.imgur.com/dcrHxxq.png"></a><br /><br />
 
 
 ## How To:  Setup
